@@ -1,0 +1,271 @@
+/*
+ Theme Name:   News IT9 
+ Theme URI:    http://example.com/twenty-twenty-one-child/
+ Description:  Twenty Twenty One Child Theme
+ Author:       Gabriel Morganti
+ Author URI:   https://github.com/GabrielMorganti
+ Template:     twentytwentyone
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-twenty-one-child
+*/
+
+
+.topo{
+    padding-top: 15px;  
+}
+
+.borda{
+    border-bottom-style: solid ;
+    border-bottom-width: 3px ;
+    border-bottom-color: black;
+    margin-top: 15px;
+}
+
+.borda-categorias{
+    border-bottom-style: solid ;
+    border-bottom-width: 1px ;
+    border-bottom-color: black;
+    margin-top: 0px;
+}
+
+
+.data{
+    font-size: 0.7em;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.logo{
+    width: 130px;
+    align-items: center;
+    margin-left: 132px;
+}
+
+.botao{
+    margin-left: 220px;
+}
+
+.borda-esquerda{
+    border-left-style: solid ;
+    border-left-width: 3px ;
+    border-left-color: black;
+    height: 773px;
+}
+
+.categorias{
+    padding-left: 265px;
+}
+
+.foto{
+    min-height: 100px;
+    width: 150px;
+}
+
+.title{
+    font-size: 0.95em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin-top: -7px;
+}
+
+.title-1{
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin-top: -14px;
+    margin-left: 23px;
+}
+
+.title-2{
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin-top: -30px;
+    margin-left: px;
+}
+
+.data-post{
+    font-size: 0.64em;
+    text-align: justify;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.data-post-1{
+    font-size: 0.87em;
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 23px;
+    text-decoration: none;
+}
+
+.data-post-2{
+    font-size: 0.64em;
+    text-align: justify;
+    margin-top: 0px;
+    margin-top: -65px;
+    text-decoration: none;
+}
+
+.data-post-3{
+    font-size: 0.55em;
+    text-align: justify;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.tam{
+    height: 150px;
+}
+
+.back{
+    min-height: 100px;
+}
+
+.leia-mais{
+    margin-top: 0px;
+}
+
+.leia-mais-1{
+    margin-right: 23px;
+    
+}
+
+.leia-mais-2{
+    margin-right: 105px;
+}
+
+.categoria-post{
+    font-size: 0.6em;
+
+}
+.categoria-post-2{
+    font-size: 0.75em;
+
+}
+
+.categoria-post-1{
+    font-size: 0.87em; 
+    margin-left: 23px;
+    max-width: 830px;
+
+}
+
+.menu-fixo{
+    top: 32px; /* altura que vai parar antes do topo */
+    position: sticky;
+    background-color: white;
+}
+
+.image-post{
+    width: 830px;
+    margin-left: 23px;
+    margin-top: 5px;
+}
+
+.lateral{
+    margin-top: 40px;
+}
+
+.espacamento{
+    margin-top: 111px;
+}
+
+.espacamento-1{
+    margin-top: 50px;
+}
+
+.image-category{
+    margin-top: 20px;
+}
+
+.centro{
+    padding-left: 60px;
+}
+
+.call-to-action{
+    margin-left: 95px;
+    width: 1130px;
+    margin-top: 100px;
+    height: 280px;
+    background-color: rgb(200, 149, 149);
+}
+
+.email{
+    width: 300px;
+    border-color: white;
+}
+
+.img-call {
+    width: 100px;
+    margin-left: 200px;
+}
+
+.call{
+    width: 500px;
+    text-align: center;
+}
+
+.action{
+    padding-top: 50px;
+    margin-left: 65px;
+    padding-left: 20px;
+}
+
+.top-new{
+    margin-top: 150px;
+}
+
+.img-top-new{
+    margin-top: 25px;
+    width: 650px;
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+.topo-cell{
+    padding-top: 10px;
+    max-width: 700px;
+    height: 75px;
+    background-color: white;
+}
+
+.categoria-cell{
+
+}
+
+.logo{
+    width: 150px;
+    margin-left: 90px;
+}
+
+.fundo{
+    background-color: white;
+    width: 700px;
+}
+
+.borda-cell{
+    border-bottom-style: solid ;
+    border-bottom-width: 3px ;
+    border-bottom-color: black;
+    margin-top: 10px;
+}
+
+.data-cell{
+    font-size: 0.8em;
+    padding-top: 15px;
+}
+
+}
+
+
