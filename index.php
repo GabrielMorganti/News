@@ -25,7 +25,7 @@
                     <div class="">
                         <a style="text-decoration: none;" href="<?php the_permalink(); ?>">
                             <p class="data-post-1 d-flex align-items-end justify-content-between"> <i class="bi bi-calendar-event"></i> <?php the_time('F j, Y'); ?>
-                        </a><a class="leia-mais-1" href="<?php the_permalink(); ?>">leia Mais</a></p>
+                        </a><a class="leia-mais-1" href="<?php the_permalink(); ?>">ler mais</a></p>
                     </div>
                 <?php
                 endif;
@@ -54,7 +54,7 @@
 
                                 <a style="text-decoration: none;" href="<?php the_permalink(); ?>">
                                     <p class="data-post d-flex align-items-end justify-content-between"><i class="bi bi-calendar-event"></i> <?php the_time('F j, Y'); ?>
-                                </a><a class="leia-mais" href="<?php the_permalink(); ?>">leia Mais</a>
+                                </a><a class="leia-mais" href="<?php the_permalink(); ?>">ler mais</a>
                             </p>
                         </div>
                         <div class="espacamento"></div>
@@ -94,7 +94,7 @@
                         <div class="">
                             <a style="text-decoration: none;" href="<?php the_permalink(); ?>">
                                 <p class="data-post-3 d-flex align-items-end justify-content-between"> <i class="bi bi-calendar-event"></i> <?php the_time('F j, Y'); ?>
-                            </a><a class="leia-mais-2" href="<?php the_permalink(); ?>">leia Mais</a></p>
+                            </a><a class="" href="<?php the_permalink(); ?>">ler mais</a></p>
                         </div>
                     </div>
 
@@ -117,13 +117,13 @@
                             <h3 class="title-2"><?php the_title(); ?></h3>
 
                         <div class="">
-                            <p class="categoria-post-2"><?php echo wp_trim_words(get_the_content(), 11, '...'); ?> | <?php the_category(','); ?>
+                            <p class="categoria-post-2"><?php echo wp_trim_words(get_the_content(), 11, '...'); ?> | <?php the_category(','); ?> 
                         </div>
 
                         <div class="">
                             <a style="text-decoration: none;" href="<?php the_permalink(); ?>">
                                 <p class="data-post-3 d-flex align-items-end justify-content-between"> <i class="bi bi-calendar-event"></i> <?php the_time('F j, Y'); ?>
-                            </a><a class="leia-mais-2" href="<?php the_permalink(); ?>">leia Mais</a></p>
+                            </a><a class="" href="<?php the_permalink(); ?>">ler mais</a></p>
                         </div>
 
                             <?php
@@ -157,7 +157,7 @@
                         <div class="">
                             <a style="text-decoration: none;" href="<?php the_permalink(); ?>">
                                 <p class="data-post-3 d-flex align-items-end justify-content-between"> <i class="bi bi-calendar-event"></i> <?php the_time('F j, Y'); ?>
-                            </a><a class="leia-mais-2" href="<?php the_permalink(); ?>">leia Mais</a></p>
+                            </a><a class="" href="<?php the_permalink(); ?>">ler mais</a></p>
                         </div>
 
                             <?php
@@ -192,14 +192,16 @@
                     </div>
 
                     <div class="">
+                        <h3 class="title-2"><?php the_title(); ?></h3>
+                    </div>
+                    
+                    <div class="">
                         <a style="text-decoration: none;" href="<?php the_permalink(); ?>">
                             <p class="data-post-2 d-flex align-items-end justify-content-between"> <i class="bi bi-calendar-event"></i> <?php the_time('F j, Y'); ?>
                         </a>
                     </div>
 
-                    <div class="">
-                        <h3 class="title-2"><?php the_title(); ?></h3>
-                    </div>
+                    
 
                     <div class="mt-5"></div>
 
@@ -218,7 +220,7 @@
 
                                             <a style="text-decoration: none;" href="<?php the_permalink(); ?>">
                                                 <p class="data-post d-flex align-items-end justify-content-between"><i class="bi bi-calendar-event"></i> <?php the_time('F j, Y'); ?>
-                                            </a><a class="leia-mais" href="<?php the_permalink(); ?>">leia Mais</a>
+                                            </a><a class="leia-mais" href="<?php the_permalink(); ?>">ler mais</a>
                                         </p>
                                     </div>
 
@@ -286,7 +288,7 @@
 
                                             <a style="text-decoration: none;" href="<?php the_permalink(); ?>">
                                                 <p class="data-post d-flex align-items-end justify-content-between"><i class="bi bi-calendar-event"></i> <?php the_time('F j, Y'); ?>
-                                            </a><a class="leia-mais" href="<?php the_permalink(); ?>">leia Mais</a>
+                                            </a><a class="leia-mais" href="<?php the_permalink(); ?>">ler mais</a>
                                         </p>
                                     </div>
 
@@ -356,7 +358,7 @@
 
                                             <a style="text-decoration: none;" href="<?php the_permalink(); ?>">
                                                 <p class="data-post d-flex align-items-end justify-content-between"><i class="bi bi-calendar-event"></i> <?php the_time('F j, Y'); ?>
-                                            </a><a class="leia-mais" href="<?php the_permalink(); ?>">leia Mais</a>
+                                            </a><a class="leia-mais" href="<?php the_permalink(); ?>">ler mais</a>
                                         </p>
                                     </div>
 
@@ -429,7 +431,7 @@
 
                                                 <a style="text-decoration: none;" href="<?php the_permalink(); ?>">
                                                     <p class="data-post d-flex align-items-end justify-content-between"><i class="bi bi-calendar-event"></i> <?php the_time('F j, Y'); ?>
-                                                </a><a class="leia-mais" href="<?php the_permalink(); ?>">leia Mais</a>
+                                                </a><a class="leia-mais" href="<?php the_permalink(); ?>">ler mais</a>
                                             </p>
                                         </div>
 
@@ -497,7 +499,7 @@
 
                                                 <a style="text-decoration: none;" href="<?php the_permalink(); ?>">
                                                     <p class="data-post d-flex align-items-end justify-content-between"><i class="bi bi-calendar-event"></i> <?php the_time('F j, Y'); ?>
-                                                </a><a class="leia-mais" href="<?php the_permalink(); ?>">leia Mais</a>
+                                                </a><a class="leia-mais" href="<?php the_permalink(); ?>">ler mais</a>
                                             </p>
                                         </div>
 
@@ -567,7 +569,7 @@
 
                                                 <a style="text-decoration: none;" href="<?php the_permalink(); ?>">
                                                     <p class="data-post d-flex align-items-end justify-content-between"><i class="bi bi-calendar-event"></i> <?php the_time('F j, Y'); ?>
-                                                </a><a class="leia-mais" href="<?php the_permalink(); ?>">leia Mais</a>
+                                                </a><a class="leia-mais" href="<?php the_permalink(); ?>">ler mais</a>
                                             </p>
                                         </div>
 

@@ -9,14 +9,10 @@
 
     <?php wp_head(); ?>
 
-    <!-- CSS -->
-
-    <!-- /CSS -->
-
 </head>
 
 <body>
-    <div class="topo-pc menu-fixo d-none d-md-block d-xl-block">
+    <div class="container-fluid menu-fixo d-none d-md-block d-xl-block">
         <div class="row topo">
             <div class="col-sm-4 align-items-center data  d-none d-md-block d-xl-block">
                 <?php the_time('l j, F Y '); ?>
@@ -35,7 +31,7 @@
             </div>
 
             <div class="col-sm-4">
-                <button class="btn btn-success botao  d-none d-md-block d-xl-block">Contato</button>
+                <a href="/wordpress/?page_id=84"><button class="btn btn-success botao  d-none d-md-block d-xl-block">Contato</button></a>
             </div>
         </div>
 
@@ -113,7 +109,7 @@
                                         <a class="nav-link" href="http://localhost/wordpress/?page_id=48">TÉCNOLOGIA</a>
                                     </li>
                                     <li class="nav-item">
-                                        <button class="btn btn-success d-block d-md-none d-sm-none">Contato</button>
+                                        <a href="/wordpress/?page_id=84"><button class="btn btn-success d-block d-md-none d-sm-none">Contato</button></a>
                                     </li>
                                 </ul>
                             </div>

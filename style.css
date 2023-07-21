@@ -12,9 +12,17 @@
  Text Domain:  twenty-twenty-one-child
 */
 
+.container{
+    color: black;
+}
+
+.container-fluid{
+    color: black;
+}
+
 
 .topo{
-    padding-top: 15px;  
+    padding-top: 15px; 
 }
 
 .borda{
@@ -56,7 +64,7 @@
 }
 
 .categorias{
-    padding-left: 265px;
+    padding-left: 235px;
 }
 
 .foto{
@@ -90,6 +98,16 @@
     margin-left: px;
 }
 
+
+
+.title-3{
+    font-size: 0.85em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-align: start;
+}
+
 .data-post{
     font-size: 0.64em;
     text-align: justify;
@@ -120,6 +138,13 @@
     text-decoration: none;
 }
 
+.data-post-4{
+    font-size: 0.65em;
+    text-align: justify;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
 .tam{
     height: 150px;
 }
@@ -137,9 +162,6 @@
     
 }
 
-.leia-mais-2{
-    margin-right: 105px;
-}
 
 .categoria-post{
     font-size: 0.6em;
@@ -197,6 +219,13 @@
     background-color: rgb(200, 149, 149);
 }
 
+.call-to-action-2{
+    width: 1130px;
+    margin-top: 100px;
+    height: 280px;
+    background-color: rgb(200, 149, 149);
+}
+
 .email{
     width: 300px;
     border-color: white;
@@ -227,8 +256,26 @@
     width: 650px;
 }
 
+.author-name{
+    text-align: justify;
+}
+
+.rodape{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.logo-footer{
+    font-size: 0.7em;
+    margin-left: 25px;
+
+}
 
 
+.logo-footer .footer-img{
+    width: 200px;
+    background-color: white;
+}
 
 
 @media screen and (max-width: 700px) {
@@ -237,6 +284,12 @@
     padding-top: 10px;
     max-width: 700px;
     height: 75px;
+    background-color: white;
+}
+
+
+.logo-footer .footer-icons{
+    width: 200px;
     background-color: white;
 }
 
