@@ -17,7 +17,7 @@
         </div>
 
         <div class=" author-name">
-            <p> Author </p> 
+            <p><?php the_author();?>Author</p> 
             <p><?php the_time('F j, Y'); ?> </p>
         </div>
 
@@ -27,7 +27,7 @@
                 endif ?>
         </div>
 
-        <div class="text-justify">
+        <div class="col-md-12 text-justify">
             <p class=""><?php echo the_content(); ?>
         </div>
     </div>
@@ -44,17 +44,18 @@
                                     the_post();
         ?>
                         
-        <div class="col-sm-4 text-center mt-3 ">
-            <a href="<?php the_permalink(); ?>">
+        <div class="col-md-4 text-center mt-3 ">
+            <a style="text-decoration: none;" class="single-hov" href="<?php the_permalink(); ?>">
+                <div class="single-hov">
                 <?php if (has_post_thumbnail()) :
                     the_post_thumbnail('small', array('class' => 'img-fluid rounded'));
                 endif ?>
+            
+
+                <h3 class="single-hov title-single"><?php the_title(); ?></h3>
+                </div>
             </a>
-
-            <div class="mt-2">
-                <h3 class="title-3"><?php the_title(); ?></h3>
-            </div>
-
+            
             <div class="mt-2">
                 <a style="text-decoration: none;" href="<?php the_permalink(); ?>">
                     <p class="data-post-4 d-flex align-items-end justify-content-between"> <i class="bi bi-calendar-event"></i> <?php the_time('F j, Y'); ?>
@@ -62,17 +63,18 @@
             </div>
         </div>
 
-        <div class="col-sm-4 text-center mt-3">
-            <a href="<?php the_permalink(); ?>">
+        <div class="col-md-4 text-center mt-3 ">
+            <a style="text-decoration: none;" class="single-hov" href="<?php the_permalink(); ?>">
+                <div class="single-hov">
                 <?php if (has_post_thumbnail()) :
                     the_post_thumbnail('small', array('class' => 'img-fluid rounded'));
                 endif ?>
+            
+
+                <h3 class="single-hov title-single"><?php the_title(); ?></h3>
+                </div>
             </a>
-
-            <div class="mt-2">
-                <h3 class="title-3"><?php the_title(); ?></h3>
-            </div>
-
+            
             <div class="mt-2">
                 <a style="text-decoration: none;" href="<?php the_permalink(); ?>">
                     <p class="data-post-4 d-flex align-items-end justify-content-between"> <i class="bi bi-calendar-event"></i> <?php the_time('F j, Y'); ?>
@@ -80,17 +82,18 @@
             </div>
         </div>
 
-        <div class="col-sm-4 text-center mt-3">
-            <a href="<?php the_permalink(); ?>">
+        <div class="col-md-4 text-center mt-3 ">
+            <a style="text-decoration: none;" class="single-hov" href="<?php the_permalink(); ?>">
+                <div class="single-hov">
                 <?php if (has_post_thumbnail()) :
                     the_post_thumbnail('small', array('class' => 'img-fluid rounded'));
                 endif ?>
+            
+
+                <h3 class="single-hov title-single"><?php the_title(); ?></h3>
+                </div>
             </a>
-
-            <div class="mt-2">
-                <h3 class="title-3"><?php the_title(); ?></h3>
-            </div>
-
+            
             <div class="mt-2">
                 <a style="text-decoration: none;" href="<?php the_permalink(); ?>">
                     <p class="data-post-4 d-flex align-items-end justify-content-between"> <i class="bi bi-calendar-event"></i> <?php the_time('F j, Y'); ?>
@@ -104,35 +107,35 @@
         ?>                         
     </div>
 
-    <div class="row call-to-action-2 rounded col-sm-12">
-        <div class="col-sm-12">
-                <div class="row d-flex align-items-center action">
-                    <div class="col-6">
-                        <h2>Teste por 30 dias Grátis</h2>
-                        <h4 class="call">Você tem acesso a conteúdos exclusivos só aqui na</h4>
-                            <div class="img-call"><?php
-                                if (function_exists('the_custom_logo')) {
-                                the_custom_logo();
-                                 }
+    <div class="row mt-5"></div>
+
+    <div class="row mt-3  d-flex justify-content-center "> 
+
+            <div class="col-md-6 index-call-back text-center border-top border-bottom border-start border-black">
+                            <h2 class="call-index-h2">Teste por 30 Dias grátis</h2>
+                            <h5 class="call-promo">E tenha acesso a conteúdos exclusivos</h5>
+                            <div class="mt-3">
+                                <?php
+                                    if (function_exists('the_custom_logo')) {
+                                        the_custom_logo();
+                                    }
                                 ?>
                             </div>
-                            
-                    </div>
-
-                    <div class="col-3 ">
-                        <form class="" action="" method="post">
-                        <input class="form-control rounded email d-flex align-items-center" maxlength="300px" type="email" name="email" id="email" placeholder="Digite o seu E-mail" required>
-                    </div>
-
-                    <div class="col-3 button-call">
-                        <button class="btn btn-success" type="submit">Assinar Agora</button>
-                        </form>
-                    </div>
-                </div>
             </div>
+
+            <div class="col-md-6 index-call-back d-flex align-items-center  border-top border-bottom border-end border-black">
+                <meta name="csrf-token" content="{{ csrf_token() }}">
+                    <form action="?" method="$_POST">                
+                        <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
+                    
+                        <button type="submit" class="btn btn-dark rounded" name="email" id="email">Assinar Agora</button>
+                    </form>
+            </div>
+
+            <div class="mb-5"></div>
+
         </div>
-        
-        <div class="row mt-5"></div>
+
 
 
 </div>

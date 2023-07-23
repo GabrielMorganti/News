@@ -2,26 +2,28 @@
 
 <div class="container">
 
-    <div class="row col-sm-12 justify-content-center align-items-center g-2 mt-5">
-        <div class="col-md-4">
+    <div class="row justify-content-center align-items-center g-2 mt-5">
+        <div class="col-md-4 contact-1">
             <h2>Entre em contato Conosco</h2>
-            <div class="mt-5"></div>
-            <h4><i class="bi bi-geo-alt"></i> R. Alm. Protógenes, 289 - Jardim, Santo André - SP</h4>
+            <div class="mt-5 "></div>
+            <h4><i class="bi bi-geo-alt "></i> R. Alm. Protógenes, 289 - Jardim, Santo André - SP</h4>
             <div class="mt-3"></div>
             <h4> <i class="bi bi-telephone"></i> (11) 98280-5587</h4>
             <div class="mt-3"></div>
             <h4> <i class="bi bi-envelope-paper"></i> morgantigabriel@gmail.com</h4>
-            <div class="mt-3"></div>
-            <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
-            <a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+            <div class="mt-4 flex-container d-flex justify-content-evenly">
+                <a class="icons rounded-circle border border-secondary" href="https://www.facebook.com" target="_blank"><h4><i class="bi bi-facebook"></i></h4></a>
+                <a class="icons rounded-circle border border-secondary" href="https://www.instagram.com" target="_blank"><h4><i class="bi bi-instagram"></i></h4></a>
+                <a class="icons rounded-circle border border-secondary" href="https://www.twitter.com" target="_blank"><h4><i class="bi bi-twitter"></i></h4></a>
+                <a class="icons rounded-circle border border-secondary" href="https://www.youtube.com" target="_blank"><h4><i class="bi bi-youtube"></i></h4></a>
+            </div>
             <div class="mt-3"></div>
         </div>
 
         <div class="col-md-2">
 
         </div>
+
         <div class="col-md-6">
         <div class="row">
             <form action="?" method="post" enctype="multipart/form-data">
@@ -47,11 +49,10 @@
                         <textarea class="form-control" name="conteudo" id="conteudo" placeholder="Digite aqui a mensagem que você deseja nos enviar"></textarea>
                     </div>
                     <div class="col-md-2 mt-3">
-                        <input type="submit" class="btn btn-dark mb-5 mt-1 btn-lg" name="btnEnviar" id="btnEviar" value=" Enviar " style="float:left; width:1110; height:10;">
+                        <button class="btn " type="submit">Enviar</button>
                     </div>
                 </div>
             </form>
-            <hr>
         </div>
         </div>
 

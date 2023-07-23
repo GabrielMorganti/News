@@ -12,111 +12,130 @@
 </head>
 
 <body>
-    <div class="container-fluid menu-fixo d-none d-md-block d-xl-block">
-        <div class="row topo">
-            <div class="col-sm-4 align-items-center data  d-none d-md-block d-xl-block">
-                <?php the_time('l j, F Y '); ?>
-            </div>
-
-            <div class="col-sm-4 align-items-center  d-none d-md-block d-xl-block">
-                <div class="img-fluid logo">
-                    <a href="<?php echo home_url(); ?>">
-                        <?php
-                        if (function_exists('the_custom_logo')) {
-                            the_custom_logo();
-                        }
-                        ?>
-                    </a>
+    <div class="container-fluid">
+        <div class="row headerr d-none d-md-block d-xl-block">
+            <div class="flex-container">
+                <div class="col-md-4 data-header">
+                    <?php the_time('l j, F Y '); ?>
                 </div>
-            </div>
-
-            <div class="col-sm-4">
-                <a href="/wordpress/?page_id=84"><button class="btn btn-success botao  d-none d-md-block d-xl-block">Contato</button></a>
-            </div>
-        </div>
-
-        <div class="borda  d-none d-md-block d-xl-block"> </div>
-        <div class="mt-2"></div>
-
-        <nav class="navbar navbar-expand-md categorias d-none d-md-block d-xl-block" role="navigation">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <?php
-                wp_nav_menu(
-                    array(
-                        'theme_location' => 'primary',
-                        'depth' => 2,
-                        'container' => 'div',
-                        'container_class' => 'collapse navbar-collapse',
-                        'container_id' => 'bs-example-navbar-collapse-1',
-                        'menu_class' => 'nav navbar-nav',
-                        'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-                        'walker' => new WP_Bootstrap_Navwalker()
-                    )
-                );
-                ?>
-            </div>
-        </nav>
-        <hr>
-    </div>
-    </div>
-
-    <div class="topo-cell menu-fixo-cell d-block d-md-none d-sm-none">
-        <div class="row">
-            <div class="col-6 d-block d-md-none d-sm-none data-cell text-center">
-            <?php the_time('l j, F Y '); ?>
-            </div>
-            <div class="col-6 align-items-center  d-block d-md-none d-sm-none">
-                <div class="img-fluid logo">
-                    <a href="<?php echo home_url(); ?>">
-                        <?php
-                        if (function_exists('the_custom_logo')) {
-                            the_custom_logo();
-                        }
-                        ?>
-                    </a>
-                </div>
-            </div>
-        </div>
         
-        <div class="borda-cell d-block d-md-none d-sm-none"></div>
 
-        <div class="row fundo">
-            <div class="col-6 align-items-center  d-block d-md-none d-sm-none">
-                <div class="container-fluid fundo d-flex align-items-start">
-                    <nav class="navbar navbar-expand-lg fundo categoria-cell">
-                        <div class="container-fluid">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="http://localhost/wordpress/?page_id=2">ESPORTES</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="http://localhost/wordpress/?page_id=38">ENTRETENIMENTO</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="http://localhost/wordpress/?page_id=41">POLÍTICA</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="http://localhost/wordpress/?page_id=45">SAÚDE E ESTÉTICA</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="http://localhost/wordpress/?page_id=48">TÉCNOLOGIA</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/wordpress/?page_id=84"><button class="btn btn-success d-block d-md-none d-sm-none">Contato</button></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
+                <div class="col-md-4 img-fluid logo-header">
+                        <a href="<?php echo home_url(); ?>">
+                            <?php
+                                if (function_exists('the_custom_logo')) {
+                                    the_custom_logo();
+                                 }
+                            ?>
+                        </a>
+                </div>
+
+                    
+                <div class="col-md-4 contact">
+                    <a href="/wordpress/?page_id=84">
+                        <button class="btn btn-dark d-none d-md-block d-xl-block">Contato</button>
+                    </a>
                 </div>
             </div>
-        </div> 
-        <HR></HR>
+        </div>
+
+        
+
+        <div class="row cat-header d-none d-md-block d-xl-block">
+            <div class="borda"></div>
+                <div class="flex-container">
+                    <div class="col-md-12 ">
+                        <nav class="navbar navbar-expand-md fw-bolder cat-header" role="navigation">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <?php
+                                    wp_nav_menu(
+                                        array(
+                                            'theme_location' => 'primary',
+                                            'depth' => 2,
+                                            'container' => 'div',
+                                            'container_class' => 'collapse navbar-collapse',
+                                            'container_id' => 'bs-example-navbar-collapse-1',
+                                            'menu_class' => 'nav navbar-nav',
+                                            'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                                            'walker' => new WP_Bootstrap_Navwalker()
+                                        )
+                                    );
+                                ?>
+                        </nav>
+                    </div>
+                </div>
+        </div>
     </div>
+
+    <div class="container-fluid">
+        <div class="row header-cell d-block d-md-none">
+            <div class="flex-container data-header">
+                <div class="col-6">
+                    <?php the_time('l j, F Y '); ?>
+                </div>
+
+                <div class="col-6 flex-sm-fill">
+                    <div class=" img-fluid logo-header ms-auto p-2 flex-fill">
+                            <a href="<?php echo home_url(); ?>">
+                                <?php
+                                    if (function_exists('the_custom_logo')) {
+                                        the_custom_logo();
+                                    }
+                                ?>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row cat-cell-header d-block d-md-none">
+            <div class="borda"></div>
+                <div class="flex-container">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse categorias-header-cell" id="navbarNav">
+                                    <?php
+                                        $categories = get_categories( array(
+                                            'orderby'   => 'name',
+                                            'order'     => 'ASC',
+                                            'child_of'            => 0,
+                                            'current_category'    => 0,
+                                            'depth'               => 0,
+                                            'echo'                => 1,
+                                            'exclude'             => '1',
+                                            'exclude_tree'        => '',
+                                            'feed'                => '',
+                                            'feed_image'          => '',
+                                            'feed_type'           => '',
+                                            'hide_empty'          => 0,
+                                            'hide_title_if_empty' => false,
+                                            'hierarchical'        => true,
+                                            'show_count'          => 0,
+                                            'show_option_all'     => '',
+                                            'show_option_none'    => __( 'No categories' ),
+                                            'taxonomy'            => 'category',
+                                            'title_li'            => __( 'Categories' ),
+                                            'use_desc_for_title'  => 1,
+                                        ) );
+
+                                        foreach( $categories as $category ) {
+                                            echo '<div class="col-md-6"><a class=" categorias-cell fw-bolder" href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';   
+                                        } 
+                                    ?>
+                                        
+                                        <div class="mt-2"></div>
+                                        <a href="/wordpress/?page_id=84"><button class="btn btn-dark">Contato</button></a>
+                                </div>
+                            </div>
+                        </nav>           
+                    </div>
+                </div>
+        </div>
+    </div>
+    <hr>
