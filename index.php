@@ -70,17 +70,19 @@
             </div>
 
             
-            <div class="col-md-3 title-index-lateral align-self-center d-none d-md-block d-xl-block">
+            <div class="col-md-3 title-index-lateral align-self-end d-none d-md-block d-xl-block mb-5">
                 <div class="flex-container">
                         <?php
                             if (have_posts()) :
                                 while (have_posts()) :
                                     the_post(); ?>
                                     <a style="text-decoration: none;" class="index-hov" href="">
-                                        <div class="index-hov-4">
-                                            <h3 class="title index-hov-4 mt-3"><?php the_title(); ?></h3>
-                                            <p class="categoria-post"><?php echo wp_trim_words(get_the_content(), 12, '...'); ?> | <?php the_category(','); ?>
-                                        </div>   
+                                        <div class="index-hov-4 mb-2">
+                                            <h3 class="title index-hov-4"><?php the_title(); ?></h3>
+                                            <p class="categoria-post"><?php echo wp_trim_words(get_the_content(), 8, '...'); ?> | <?php the_category(','); ?>
+                                        </div> 
+                                        
+                                        <div class="mt-4"></div>
                                                     <p class="data-post"><i class="bi bi-calendar-event"></i> <?php the_time('F j, Y'); ?>
                                                         <a class="leia-mais" href="<?php the_permalink(); ?>">ler mais</a>
                                                     </p>
